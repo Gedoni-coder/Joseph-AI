@@ -6,7 +6,7 @@ import {
   projectInputs as mockProjects,
   mockAnalyses,
   generateFeasibilityAnalysis,
-} from "@/lib/feasibility-data";
+} //from //"@/lib/feasibility-data";
 
 interface FeasibilityDataState {
   projects: ProjectInput[];
