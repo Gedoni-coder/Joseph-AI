@@ -19,7 +19,7 @@ import {
   calculateTotalInterest,
   calculateAPR,
   getEligibilityScore,
-} //from "@/lib/loan-funding-data";
+} from "@/lib/loan-funding-data";
 
 interface UseLoanFundingDataReturn {
   // Data States

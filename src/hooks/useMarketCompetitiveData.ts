@@ -28,7 +28,7 @@ import {
   getHighImpactTrends,
   getCustomerSegmentsByRevenue,
   getUrgentRecommendations,
-} //from "@/lib/market-competitive-data";
+} from "@/lib/market-competitive-data";
 
 interface UseMarketCompetitiveDataReturn {
   // Data States

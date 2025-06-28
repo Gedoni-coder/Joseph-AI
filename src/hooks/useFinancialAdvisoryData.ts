@@ -20,7 +20,7 @@ import {
   calculateRiskScore,
   calculateWorkingCapital,
   calculateCashConversionCycle,
-} //from "../lib/financial-advisory-data";
+}/from "../lib/financial-advisory-data";
 
 // Main hook for financial advisory and planning data
 export function useFinancialAdvisoryData() {
