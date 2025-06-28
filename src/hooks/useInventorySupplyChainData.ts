@@ -34,7 +34,7 @@ import {
   calculateSafetyStock,
   getStockStatus,
   calculateInventoryValue,
-} from "../lib/inventory-supply-chain-data";
+} //from //"../lib/inventory-supply-chain-data";
 
 // Main hook for inventory and supply chain data
 export function useInventorySupplyChainData() {
