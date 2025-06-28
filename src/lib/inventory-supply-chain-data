@@ -1,0 +1,47 @@
+// src/lib/supply-chain-inventory-data.ts
+
+export interface InventoryItem {
+  productName: string;
+  currentStock: number;
+  reorderPoint: number;
+  supplier: string;
+  leadTimeDays: number; // days it takes to restock
+  supplierReliability: "High" | "Medium" | "Low";
+}
+
+const supplyChainInventoryData: InventoryItem[] = [
+  {
+    productName: "Smartphone Cases",
+    currentStock: 120,
+    reorderPoint: 100,
+    supplier: "Alpha Plastics Ltd.",
+    leadTimeDays: 7,
+    supplierReliability: "High",
+  },
+  {
+    productName: "Organic Coffee Beans",
+    currentStock: 40,
+    reorderPoint: 60,
+    supplier: "GreenEarth Foods",
+    leadTimeDays: 14,
+    supplierReliability: "Medium",
+  },
+  {
+    productName: "LED Light Bulbs",
+    currentStock: 300,
+    reorderPoint: 200,
+    supplier: "BrightLite Co.",
+    leadTimeDays: 5,
+    supplierReliability: "High",
+  },
+  {
+    productName: "Reusable Water Bottles",
+    currentStock: 80,
+    reorderPoint: 100,
+    supplier: "EcoHydrate Ltd.",
+    leadTimeDays: 10,
+    supplierReliability: "Low",
+  }
+];
+
+export default supplyChainInventoryData;

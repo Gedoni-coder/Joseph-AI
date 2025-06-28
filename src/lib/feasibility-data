@@ -1,0 +1,47 @@
+// src/lib/feasibility-data.ts
+
+export interface FeasibilityEntry {
+  businessType: string;
+  estimatedStartupCost: number; // in USD
+  marketSize: string;
+  expectedMonthlyRevenue: number;
+  breakEvenMonths: number;
+  feasibilityRating: "High" | "Medium" | "Low";
+}
+
+const feasibilityData: FeasibilityEntry[] = [
+  {
+    businessType: "Online Retail (Dropshipping)",
+    estimatedStartupCost: 1500,
+    marketSize: "Global",
+    expectedMonthlyRevenue: 3000,
+    breakEvenMonths: 2,
+    feasibilityRating: "High",
+  },
+  {
+    businessType: "Food Truck",
+    estimatedStartupCost: 12000,
+    marketSize: "Urban (Local)",
+    expectedMonthlyRevenue: 5000,
+    breakEvenMonths: 6,
+    feasibilityRating: "Medium",
+  },
+  {
+    businessType: "Mobile App (Subscription-based)",
+    estimatedStartupCost: 8000,
+    marketSize: "Global (Tech-savvy)",
+    expectedMonthlyRevenue: 7000,
+    breakEvenMonths: 3,
+    feasibilityRating: "High",
+  },
+  {
+    businessType: "Brick-and-Mortar Retail Store",
+    estimatedStartupCost: 25000,
+    marketSize: "Urban",
+    expectedMonthlyRevenue: 6000,
+    breakEvenMonths: 8,
+    feasibilityRating: "Low",
+  }
+];
+
+export default feasibilityData;

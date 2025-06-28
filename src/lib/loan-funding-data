@@ -1,0 +1,52 @@
+// src/lib/loan-and-funding-data.ts
+
+export interface FundingOption {
+  fundingType: "Microloan" | "Startup Grant" | "SME Bank Loan" | "Equity Investment";
+  provider: string;
+  interestRate: string; // e.g. "5% per annum" or "N/A"
+  maxAmountUSD: number;
+  eligibilityCriteria: string;
+  repaymentTerms: string;
+  stageRecommended: "Startup" | "Growth" | "Expansion" | "Recovery";
+}
+
+const loanAndFundingData: FundingOption[] = [
+  {
+    fundingType: "Microloan",
+    provider: "NIRSAL Microfinance Bank",
+    interestRate: "9% per annum",
+    maxAmountUSD: 5000,
+    eligibilityCriteria: "Registered business under 2 years with proof of cash flow",
+    repaymentTerms: "12–24 months",
+    stageRecommended: "Startup",
+  },
+  {
+    fundingType: "Startup Grant",
+    provider: "Tony Elumelu Foundation",
+    interestRate: "N/A (Grant)",
+    maxAmountUSD: 5000,
+    eligibilityCriteria: "African entrepreneurs with innovative business ideas",
+    repaymentTerms: "None",
+    stageRecommended: "Startup",
+  },
+  {
+    fundingType: "SME Bank Loan",
+    provider: "Bank of Industry Nigeria",
+    interestRate: "7% per annum",
+    maxAmountUSD: 50000,
+    eligibilityCriteria: "SMEs with CAC registration and business plan",
+    repaymentTerms: "1–5 years",
+    stageRecommended: "Growth",
+  },
+  {
+    fundingType: "Equity Investment",
+    provider: "Private Angel Investors",
+    interestRate: "N/A (Equity share)",
+    maxAmountUSD: 100000,
+    eligibilityCriteria: "High-growth startups with pitch decks",
+    repaymentTerms: "Investor owns a percentage of the company",
+    stageRecommended: "Expansion",
+  }
+];
+
+export default loanAndFundingData;

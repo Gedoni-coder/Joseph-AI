@@ -1,0 +1,47 @@
+// src/lib/pricing-revenue-data.ts
+
+export interface PricingPlan {
+  planName: string;
+  pricePerUnitUSD: number;
+  averageMonthlyUnitsSold: number;
+  customerSegment: "Startup" | "SME" | "Enterprise";
+  monthlyRevenue: number; // auto-calculated or fixed
+  pricingModel: "Flat Rate" | "Tiered" | "Usage-based";
+}
+
+const pricingRevenueData: PricingPlan[] = [
+  {
+    planName: "Starter Pack",
+    pricePerUnitUSD: 10,
+    averageMonthlyUnitsSold: 100,
+    customerSegment: "Startup",
+    monthlyRevenue: 1000,
+    pricingModel: "Flat Rate",
+  },
+  {
+    planName: "Growth Plan",
+    pricePerUnitUSD: 25,
+    averageMonthlyUnitsSold: 250,
+    customerSegment: "SME",
+    monthlyRevenue: 6250,
+    pricingModel: "Tiered",
+  },
+  {
+    planName: "Enterprise Suite",
+    pricePerUnitUSD: 100,
+    averageMonthlyUnitsSold: 80,
+    customerSegment: "Enterprise",
+    monthlyRevenue: 8000,
+    pricingModel: "Usage-based",
+  },
+  {
+    planName: "Freemium Tier",
+    pricePerUnitUSD: 0,
+    averageMonthlyUnitsSold: 500,
+    customerSegment: "Startup",
+    monthlyRevenue: 0,
+    pricingModel: "Flat Rate",
+  }
+];
+
+export default pricingRevenueData;

@@ -1,0 +1,71 @@
+// src/lib/market-competitive-data.ts
+
+export interface CompetitorProfile {
+  companyName: string;
+  industry: string;
+  marketSharePercent: number;
+  pricingStrategy: "Low-cost" | "Premium" | "Freemium" | "Dynamic";
+  keyStrengths: string[];
+  weaknesses: string[];
+}
+
+export interface MarketAnalysis {
+  sector: string;
+  totalMarketSizeUSD: number;
+  annualGrowthRatePercent: number;
+  customerTrends: string[];
+  topCompetitors: CompetitorProfile[];
+}
+
+const marketCompetitiveData: MarketAnalysis[] = [
+  {
+    sector: "E-commerce (Nigeria)",
+    totalMarketSizeUSD: 950000000,
+    annualGrowthRatePercent: 18,
+    customerTrends: [
+      "Mobile-first shopping",
+      "Cash on delivery preference",
+      "Increased social commerce"
+    ],
+    topCompetitors: [
+      {
+        companyName: "Jumia",
+        industry: "E-commerce",
+        marketSharePercent: 45,
+        pricingStrategy: "Low-cost",
+        keyStrengths: ["Brand recognition", "Nationwide logistics", "Multiple payment options"],
+        weaknesses: ["Thin profit margins", "Return issues"],
+      },
+      {
+        companyName: "Konga",
+        industry: "E-commerce",
+        marketSharePercent: 20,
+        pricingStrategy: "Freemium",
+        keyStrengths: ["Seller network", "Tech platform", "Installment payment"],
+        weaknesses: ["Limited regional presence", "Higher vendor fees"],
+      }
+    ]
+  },
+  {
+    sector: "Edtech (Africa)",
+    totalMarketSizeUSD: 350000000,
+    annualGrowthRatePercent: 22,
+    customerTrends: [
+      "Online certification demand",
+      "Gamification of learning",
+      "Mobile-accessible platforms"
+    ],
+    topCompetitors: [
+      {
+        companyName: "uLesson",
+        industry: "Education Technology",
+        marketSharePercent: 15,
+        pricingStrategy: "Premium",
+        keyStrengths: ["Offline access", "Localized content", "Aggressive marketing"],
+        weaknesses: ["Expensive subscriptions", "Competition from free platforms"],
+      }
+    ]
+  }
+];
+
+export default marketCompetitiveData;

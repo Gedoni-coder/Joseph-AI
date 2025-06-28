@@ -1,0 +1,10 @@
+// src/utils/finance-utils.ts
+
+export function calculateMonthlyRevenue(price: number, unitsSold: number): number {
+  return price * unitsSold;
+}
+
+export function calculateBreakEvenPoint(fixedCosts: number, pricePerUnit: number, variableCostPerUnit: number): number {
+  const contributionMargin = pricePerUnit - variableCostPerUnit;
+  return contributionMargin > 0 ? Math.ceil(fixedCosts / contributionMargin) : Infinity;
+}

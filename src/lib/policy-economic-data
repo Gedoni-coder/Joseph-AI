@@ -1,0 +1,35 @@
+// src/lib/policy-economic-data.ts
+
+export interface PolicyImpact {
+  policyName: string;
+  issuingBody: string;
+  affectedSectors: string[];
+  description: string;
+  economicImpact: "Positive" | "Negative" | "Neutral";
+  msmeImplication: string;
+}
+
+export interface EconomicIndicator {
+  name: string;
+  currentValue: string;
+  trend: "Increasing" | "Decreasing" | "Stable";
+  businessEffect: string;
+}
+
+const policyEconomicData = {
+  policies: <PolicyImpact[]>[
+    {
+      policyName: "Central Bank of Nigeria (CBN) SME Loan Scheme",
+      issuingBody: "CBN",
+      affectedSectors: ["Agriculture", "Retail", "Manufacturing"],
+      description: "Low-interest loans to support MSME growth in Nigeria.",
+      economicImpact: "Positive",
+      msmeImplication: "Eases access to capital for qualified small businesses.",
+    },
+    {
+      policyName: "Fuel Subsidy Removal",
+      issuingBody: "Federal Government of Nigeria",
+      affectedSectors: ["Logistics", "Transportation", "Retail"],
+      description: "Government ended fuel subsidy to reduce fiscal burden.",
+      economicImpact: "Negative",
+      msmeImplication: "Increases cost of goods and operations for MSMEs relying on transport or power generators

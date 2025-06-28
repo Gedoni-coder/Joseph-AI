@@ -1,0 +1,18 @@
+// src/lib/business-forecast-data.ts
+
+export interface ForecastEntry {
+  month: string;
+  revenue: number;
+  expenses: number;
+  profit: number;
+}
+
+const businessForecastData: ForecastEntry[] = [
+  { month: "January", revenue: 12000, expenses: 8000, profit: 4000 },
+  { month: "February", revenue: 15000, expenses: 9000, profit: 6000 },
+  { month: "March", revenue: 17000, expenses: 9500, profit: 7500 },
+  { month: "April", revenue: 16000, expenses: 10000, profit: 6000 },
+  { month: "May", revenue: 18000, expenses: 11000, profit: 7000 },
+];
+
+export default businessForecastData;

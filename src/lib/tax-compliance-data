@@ -1,0 +1,41 @@
+// src/lib/tax-and-compliance-data.ts
+
+export interface TaxComplianceEntry {
+  taxName: string;
+  applicableTo: "Startup" | "SME" | "Enterprise";
+  regulatoryBody: string;
+  rateOrFee: string;
+  filingFrequency: "Monthly" | "Quarterly" | "Annually" | "One-time";
+  complianceDeadline: string;
+  penalties: string;
+  notes?: string;
+}
+
+const taxAndComplianceData: TaxComplianceEntry[] = [
+  {
+    taxName: "Value Added Tax (VAT)",
+    applicableTo: "SME",
+    regulatoryBody: "Federal Inland Revenue Service (FIRS)",
+    rateOrFee: "7.5%",
+    filingFrequency: "Monthly",
+    complianceDeadline: "21st of every month",
+    penalties: "₦50,000 for first month; ₦25,000 for each subsequent month of default",
+    notes: "Applicable only if annual turnover exceeds ₦25 million.",
+  },
+  {
+    taxName: "Company Income Tax (CIT)",
+    applicableTo: "SME",
+    regulatoryBody: "FIRS",
+    rateOrFee: "20% (for turnover ≤ ₦100 million)",
+    filingFrequency: "Annually",
+    complianceDeadline: "Within 6 months after the end of the accounting year",
+    penalties: "10% of unpaid tax + interest at CBN MPR + 10%",
+  },
+  {
+    taxName: "Personal Income Tax (PAYE)",
+    applicableTo: "Startup",
+    regulatoryBody: "State Inland Revenue Services",
+    rateOrFee: "Progressive (7%–24%)",
+    filingFrequency: "Monthly",
+    complianceDeadline: "10th of the following month",
+    penalties: "₦500/month per employ
