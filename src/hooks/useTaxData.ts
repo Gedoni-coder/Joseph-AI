@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-//import {
+import {
   TaxCalculation,
   TaxAvoidanceRecommendation,
   ComplianceUpdate,
@@ -14,7 +14,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
   auditTrail as mockAuditTrail,
   complianceDocuments as mockDocuments,
   complianceReports as mockReports,
-} //from "@/lib/tax-compliance-data";
+} from "@/lib/tax-compliance-data";
 
 interface TaxDataState {
   calculations: TaxCalculation[];

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-//import {
+import {
   EconomicContext,
   EconomicMetric,
   EconomicNews,
@@ -7,7 +7,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
   economicMetrics as mockMetrics,
   economicNews as mockNews,
   economicForecasts as mockForecasts,
-} //from //"@/lib/economic-data";
+} from //"@/lib/economic-data";
 import { upcomingEconomicEvents, EconomicEvent } from "@/lib/economic-events";
 
 interface EconomicDataState {

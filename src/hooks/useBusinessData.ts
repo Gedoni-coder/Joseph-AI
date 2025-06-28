@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-//import {
+import {
   CustomerProfile,
   RevenueProjection,
   KPI,
@@ -12,7 +12,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
   cashFlowForecast as mockCashFlow,
   CostStructure,
   CashFlowForecast,
-} //from "@/lib/business-forecast-data";
+} from "@/lib/business-forecast-data";
 
 interface BusinessDataState {
   customerProfiles: CustomerProfile[];

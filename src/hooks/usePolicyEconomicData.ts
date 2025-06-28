@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-//import {
+import {
   PolicyItem,
   PolicyAnalysis,
   EconomicIndicator,
@@ -17,7 +17,7 @@ import { useState, useEffect, useCallback } from "react";
   getEconomicIndicatorsByCategory,
   getHighRiskEconomicImpacts,
   getUrgentRecommendations,
-} //from "@/lib/policy-economic-data";
+} from "@/lib/policy-economic-data";
 
 interface UsePolicyEconomicDataReturn {
   // Data States

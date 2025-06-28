@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-//import {
+import {
   ProjectInput,
   FeasibilityAnalysis,
   FeasibilityMode,
   projectInputs as mockProjects,
   mockAnalyses,
   generateFeasibilityAnalysis,
-} //from //"@/lib/feasibility-data";
+} from //"@/lib/feasibility-data";
 
 interface FeasibilityDataState {
   projects: ProjectInput[];

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-//import {
+import {
   StrategicBudget,
   BudgetForecast,
   CashFlowProjection,
@@ -20,7 +20,7 @@ import { useState, useEffect, useMemo } from "react";
   calculateRiskScore,
   calculateWorkingCapital,
   calculateCashConversionCycle,
-}//from "../lib/financial-advisory-data";
+}from "../lib/financial-advisory-data";
 
 // Main hook for financial advisory and planning data
 export function useFinancialAdvisoryData() {

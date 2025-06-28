@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-//import {
+import {
   PricingStrategy,
   ValueBasedPricing,
   CompetitiveBenchmark,
@@ -26,7 +26,7 @@ import { useState, useEffect, useMemo } from "react";
   calculateNetRevenueRetention,
   calculateBreakEvenPoint,
   calculateROI,
-} //from "../lib/pricing-revenue-data";
+} from "../lib/pricing-revenue-data";
 
 // Main hook for pricing and revenue optimization data
 export function usePricingRevenueData() {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-//import {
+import {
   MarketSize,
   CustomerSegment,
   MarketTrend,
@@ -28,7 +28,7 @@ import { useState, useEffect, useCallback } from "react";
   getHighImpactTrends,
   getCustomerSegmentsByRevenue,
   getUrgentRecommendations,
-} //from "@/lib/market-competitive-data";
+} from "@/lib/market-competitive-data";
 
 interface UseMarketCompetitiveDataReturn {
   // Data States

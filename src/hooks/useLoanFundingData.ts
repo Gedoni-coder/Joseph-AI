@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-//import {
+import {
   BusinessProfile,
   EligibilityAssessment,
   FundingOption,
@@ -19,7 +19,7 @@ import { useState, useEffect, useCallback } from "react";
   calculateTotalInterest,
   calculateAPR,
   getEligibilityScore,
-} //from "@/lib/loan-funding-data";
+} from "@/lib/loan-funding-data";
 
 interface UseLoanFundingDataReturn {
   // Data States

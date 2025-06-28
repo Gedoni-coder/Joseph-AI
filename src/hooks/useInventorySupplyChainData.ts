@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-//import {
+import {
   InventoryItem,
   StockLevel,
   DemandForecast,
@@ -34,7 +34,7 @@ import { useState, useEffect, useMemo } from "react";
   calculateSafetyStock,
   getStockStatus,
   calculateInventoryValue,
-} //from //"../lib/inventory-supply-chain-data";
+} from //"../lib/inventory-supply-chain-data";
 
 // Main hook for inventory and supply chain data
 export function useInventorySupplyChainData() {
