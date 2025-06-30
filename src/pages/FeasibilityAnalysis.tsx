@@ -28,6 +28,12 @@ import {
   Clock,
   Zap,
 } from "lucide-react";
+import { ProjectInput, FeasibilityAnalysis } from "@/lib/some-module"; // adjust path as needed
+
+interface SomeType {
+  projects: ProjectInput[];
+  analyses: FeasibilityAnalysis[];
+}
 
 const FeasibilityAnalysis = () => {
   const {
