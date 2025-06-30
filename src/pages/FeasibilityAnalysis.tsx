@@ -28,7 +28,60 @@ import {
   Clock,
   Zap,
 } from "lucide-react";
-import { ProjectInput, FeasibilityAnalysis } from "@/lib/some-module"; // adjust path as needed
+
+export interface ProjectInput {
+  id: string;
+  name: string;
+  initialInvestment: number;
+  industryGrowthRate: number;
+}
+
+export interface FeasibilityAnalysis {
+  result: {
+    overallScore: number;
+    recommendation: string;
+    confidenceLevel: number;
+    keyStrengths: string[];
+    keyWeaknesses: string[];
+    alternativeScenarios: {
+      scenario: string;
+      outcome: string;
+      probability: number;
+    }[];
+  };
+  risk: {
+    overallRiskScore: number;
+  };
+  timeValue: {
+    npv: number;
+  };
+  roi: {
+    paybackPeriod: number;
+    simpleROI: number;
+    annualizedROI: number;
+    returnMultiple: number;
+    profitabilityIndex: number;
+    cashFlowBreakeven: number;
+  };
+  lengthTime: {
+    projectLifespan: number;
+    optimalExitTime: number;
+    marketMaturityStage: string;
+    sustainabilityScore: number;
+    scalabilityPotential: number;
+    businessCycleImpact: number;
+  };
+  interestRate: {
+    currentRate: number;
+    costOfCapital: number;
+    requiredReturn: number;
+    rateScenarios: {
+      optimistic: number;
+      base: number;
+      pessimistic: number;
+    };
+  };
+}
 
 interface SomeType {
   projects: ProjectInput[];
