@@ -38,4 +38,40 @@ const taxAndComplianceData: TaxComplianceEntry[] = [
     rateOrFee: "Progressive (7%–24%)",
     filingFrequency: "Monthly",
     complianceDeadline: "10th of the following month",
-    penalties: "₦500/month per employ
+    penalties: "₦500/month per employee for late payment",
+    notes: "Employers are responsible for deducting and remitting PAYE.",
+  },
+  {
+    taxName: "Withholding Tax",
+    applicableTo: "Enterprise",
+    regulatoryBody: "FIRS",
+    rateOrFee: "5%–10% depending on the nature of the service",
+    filingFrequency: "Monthly",
+    complianceDeadline: "10th of the following month",
+    penalties: "₦25,000 for late payment; interest at CBN MPR for late remittance",
+    notes: "Applicable to specific transactions as per the tax laws.",
+  },
+  {
+    taxName: "Capital Gains Tax",
+    applicableTo: "Enterprise",
+    regulatoryBody: "FIRS",
+    rateOrFee: "10% on gains",
+    filingFrequency: "Annually",
+    complianceDeadline: "Within 3 months of the end of the accounting year",
+    penalties: "10% of unpaid tax + interest at CBN MPR + 10%",
+    notes: "Only applicable if total gains exceed ₦100,000 in a year.",
+  },
+];
+
+export interface TaxCalculation {
+  id: string;
+  entity: string;
+  taxYear: number;
+  income: number;
+  deductions: number;
+  taxableIncome: number;
+  estimatedTax: number;
+  effectiveRate: number;
+  marginalRate: number;
+  status: "filed" | "calculated" | "amended" | "draft";
+}
