@@ -12,7 +12,7 @@ import {
   cashFlowForecast as mockCashFlow,
   CostStructure,
   CashFlowForecast,
-} from "@/lib/Business-forecast-data";
+} from "@/lib/business-forecast-data";
 
 interface BusinessDataState {
   customerProfiles: CustomerProfile[];
